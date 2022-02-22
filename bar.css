@@ -89,12 +89,12 @@ section{
 }
 
 .pad{
-    padding: 30px;
+    padding: 50px;
     background:#292f42;
     border: rgb(155, 155, 155) 2px solid;
     border-radius: 20px;
     max-width: 70%;
-    min-width: 300px;
+    min-width: 400px;
     margin-top: 20px;
 }
 
