@@ -32,6 +32,7 @@ header{
     justify-content: center;
     margin-right: 25%;
     padding: 70px;
+    font-size: 5%;
 }
 
 header h3{
@@ -86,6 +87,7 @@ section{
 .text{
     font-family: var(--text-fonts);
     max-width: 80%;
+    font-size:3%;
 }
 
 .pad{
