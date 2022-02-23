@@ -196,7 +196,7 @@ section{
         height: 200%;
     }
 }
-@media only screen and (hover: none) and (pointer: coarse){
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 700px){
     #presentation{
         height: 90%;
     }
@@ -234,7 +234,7 @@ section{
         padding-bottom:10%;
     }
     .repo{
-        width: 80%;
+        width: 100%;
         padding-bottom: 25%;
     }
     .active p, .hidden p{
