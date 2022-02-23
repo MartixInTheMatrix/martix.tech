@@ -196,7 +196,7 @@ section{
         height: 200%;
     }
 }
-@media only screen and (hover: none) and (pointer: coarse) and (max-width: 700px){
+@media only screen and (hover: none) and (pointer: coarse){
     #presentation{
         height: 100%;
     }
