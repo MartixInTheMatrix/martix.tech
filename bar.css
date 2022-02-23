@@ -59,7 +59,7 @@ section{
     height: 100%;
     width: 3px;
     background: white;
-    margin-left:5px;
+    margin-left:6px;
     position:static;
 }
 .bar{
@@ -74,6 +74,9 @@ section{
 .cyan{
     color: var(--turquoise);
 }
+.white{
+    color: white;
+}
 .gris{
     color: var(--gris);
 }
@@ -85,26 +88,86 @@ section{
 }
 .text{
     font-family: var(--text-fonts);
-    max-width: 80%;
+    font-size: large;
 }
 
 .pad{
-    padding: 50px;
+    padding: 30px;
     background:#292f42;
     border: rgb(155, 155, 155) 2px solid;
     border-radius: 20px;
-    max-width: 70%;
-    min-width: 400px;
+    margin-left: 3%;
+    margin-right: 30%;
     margin-top: 20px;
+}
+.pad ul {
+    padding:5px;
+    list-style-type: none;
 }
 
 .spanner{
     display: flex;
     flex-direction: row;
+    font-size: large;
 }
-@media only screen and (max-width: 650px) {
+
+.nav-exp{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70%;
+    margin-right: 2%;
+}
+.nav-exp h4{
+    margin-right: 5%;
+    width: 70%;
+    height: 30%;
+}
+.spacer{
+    padding: 5%;
+}
+.hidden{
+    display: none;
+}
+.active{
+    display: initial;
+}
+.active p, .hidden p{
+    width: 75%;
+    margin-left: 20%;
+}
+.card{
+    padding: 20px;
+    border: #00FAA8 2px solid;
+    border-radius: 10px;
+    background: var(--marine);
+    width: 100%;
+}
+
+.repo{
+    margin: 20px;
+    padding: 20px;
+    border: #00FAA8 2px solid;
+    border-radius: 10px;
+    background: var(--marine);
+    width: 100%;
+    color: white;
+}
+
+.pdd{
+    padding: 10px;
+}
+@media only screen and (max-width: 700px) {
+    section{
+        height: 80%;
+    }
     .spanner{
         display: flex;
         flex-direction: column;
+    }
+    .text{
+        font-size: 3vw;
+    }
+    .card{
+        width: 40%;
     }
 }

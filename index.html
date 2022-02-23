@@ -1,7 +1,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="public/css/styles.css">
         <link rel="icon" type="image/png" href="public/img/favicon.ico"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
@@ -27,7 +26,7 @@
             </div>
             <div>
                 <h3 class="cyan code">01.Enchanté</h3>
-                <h6 style="color: white;" class="text">
+                <h6 style="color: white;margin-right: 10%;" class="text">
                     Je suis Martin alias Martix, je code des sites web, apis et autres bricoles depuis 5 ans désormais.
                     Fan du développement en tout genre, je m'épanouis encore devant ces lignes aussi belles que complexes.
                     Je code pour moi même ou pour des particuliers et me ferait un plaisir de travailler avec vous !
@@ -61,6 +60,57 @@
             </div>
             <div>
                 <h3 class="cyan code">02.Expérience</h3>
+                <div class="spanner">
+                    <div class="skills card">
+                        <div class="spanner">
+                            <i class="fa-brands fa-js green pdd"></i>
+                            <h5 class="code white pdd">JavaScript 90%</h5>
+                        </div>
+                        <div class="spanner">
+                            <i class="fa-brands fa-html5 green pdd"></i>
+                            <h5 class="code white pdd">HTML 85%</h5>
+                        </div>
+                        <div class="spanner">
+                            <i class="fa-brands fa-css3-alt green pdd"></i>
+                            <h5 class="code white pdd">CSS 70%</h5>
+                        </div>
+                        </div>
+                    <div>
+                            <div class="active" id="1">
+                                <div class="nav-exp">
+                                        <h4 class="green title">EB3</h4>
+                                        <a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a>
+                                        <a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a>    
+                                    </div>
+                                <p class="text white">J'ai développé un site commercant pour EB3, un serveur communautaire autour de discord. Vous pouvez y trouver des abonnements discord à bas prix ! Le fondateur du projet était très content du site, et je reste en contact avec lui encore aujourd'hui.</p>
+                            </div>
+                            
+                            <div class="hidden" id="2">
+                                <div class="nav-exp">
+                                    <h4 class="green title">Husky</h4>
+                                    <a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a>
+                                    <a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a>
+                                </div>
+                                <p class="text white">J'y ai développé un bot discord communautaire multifonctions. Ma mission était de sécuriser le serveur d'attaques et d'améliorer l'exéperience des utilisateurs. Quentin Gaucher sur youtube est le fondateur, il m'a remercié de mon travail.<b style="opacity: 0;">ddzqdzqdqzdzqdzdqzdqd</b></p>
+                            </div>
+                            <div class="hidden" id="3">
+                                <div class="nav-exp">
+                                    <h4 class="green title">AJ</h4>
+                                    <a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a>
+                                    <a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a>
+                                </div>
+                                <p class="text white">J'ai implanté des systèmes supplémentaires aux infrastructures du projet. Comme un système de report d'un message, des commandes statistiques... Les développeurs déjà dans le projet avant moi m'ont fait confiance et je les remercie !<b  style="opacity: 0;">dzqdzdqzdqddzqdqzdzq</b></p>
+                            </div>
+                            <div class="hidden" id="4">
+                                <div class="nav-exp">
+                                    <h4 class="green title">NRG</h4>
+                                    <a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a>
+                                    <a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a>
+                                </div>
+                                <p class="text white">J'ai développé un bot discord public analyste qui permet d'avoir des statistiques précises sur un serveur, un utilisateur... De nombreux nombreux graphiques y sont intégrés. J'ai prit beaucoup de temps à développer ce bot, et je le trouve parfait.<b  style="opacity: 0;">d</b></p>
+                            </div>
+                        </div>
+                </div>
             </div>
             
         </section>
@@ -72,12 +122,41 @@
             </div>
             <div>
                 <h3 class="cyan code">03.Projets</h3>
-                
+                <div class="spanner">
+                    <div class="repo" id="repo1">
+                        <h2><a id="h1" class="code"></a></h2>
+                        <p id="p1"></p>
+                    </div>
+                    <div class="repo" id="repo2">
+                        <h2><a id="h2" class="code"></a></h2>
+                        <p id="p2"></p>
+                    </div>
+                    <div class="repo" id="repo3">
+                        <h2><a id="h3" class="code"></a></h2>
+                        <p id="p3"></p>
+                    </div>
+                </div>
+                <div class="spanner">
+                    <div class="repo" id="repo4">
+                        <h2><a id="h4" class="code"></a></h2>
+                        <p id="p4"></p>
+                    </div>
+                    <div class="repo" id="repo5">
+                        <h2><a id="h5" class="code"></a></h2>
+                        <p id="p5"></p>
+                    </div>
+                    <div class="repo" id="repo6">
+                        <h2><a id="h6" class="code"></a></h2>
+                        <p id="p6"></p>
+                    </div>
+                </div>
             </div>
             
         </section>
         
         </div>
         <script src="bar.js"></script>
+        <script src="./nav.js"></script>
+        <script src="./repos.js"></script>
     </body>
 </html>
