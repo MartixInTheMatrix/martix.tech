@@ -49,6 +49,7 @@ section{
     align-items: center;
     height: 80%;
     box-sizing: border-box;
+    
 }
 
 .bar i{
@@ -104,6 +105,11 @@ section{
     padding:5px;
     list-style-type: none;
 }
+.spanner1{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
 
 .spanner{
     display: flex;
@@ -151,23 +157,83 @@ section{
     background: var(--marine);
     width: 100%;
     color: white;
+    max-height: 200px;
 }
 
 .pdd{
     padding: 10px;
 }
-@media only screen and (max-width: 700px) {
+#projets{
+    height: 60%;
+}
+.reposec{
+    height: 60%;
+}
+@media (max-width: 700px) {
     section{
+        height: 60%;
+    }
+    #presentation{
         height: 80%;
+    }
+    #projets{
+        height: 100%;
+    }
+    .spanner1{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .spanner{
+        display: flex;
+        flex-direction: column;
+    }
+    .reposec{
+        height: 180%;
+    }
+}
+@media only screen and (hover: none) and (pointer: coarse){
+    #presentation{
+        height: 90%;
+    }
+    .text{
+        font-size: 5vw;
+    }
+    .code{
+        font-size: 5vw;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 7.5vw
+    }
+    #projets{
+        height: 120%;
+    }
+    section{
+        height: 60%;
+    }
+    .spanner1{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 40%;
     }
     .spanner{
         display: flex;
         flex-direction: column;
     }
-    .text{
-        font-size: 3vw;
+    .reposec{
+        height: 100%;
     }
-    .card{
-        width: 40%;
+    header{
+        margin-right: 2%;
+    }
+    .repo{
+        width: 80%;
+        height: 20%;
     }
 }
