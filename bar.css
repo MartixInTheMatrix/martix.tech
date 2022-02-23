@@ -53,13 +53,13 @@ section{
 }
 
 .bar i{
-    color: white;
+    color: var(--vert);
 }
 .transition{
     box-sizing: content-box;
     height: 100%;
     width: 3px;
-    background: white;
+    background: var(--vert);
     margin-left:6px;
     position:static;
 }
