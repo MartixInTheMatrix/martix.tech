@@ -12,7 +12,7 @@ function loadRepos(){
     console.log(reposArray[0])
     for(let i =1; i<=6; i++){
         document.getElementById('h'+i).innerText = reposArray[i-1].name
-        document.getElementById('h'+i).href = reposArray[i-1].url
+        document.getElementById('h'+i).href = reposArray[i-1].svn_url
         document.getElementById('p'+i).innerText = reposArray[i-1].description
 
     }
