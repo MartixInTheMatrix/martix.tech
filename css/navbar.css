@@ -1,0 +1,52 @@
+.menu{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    background: #242C47;
+}
+.sects{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    width: 20px;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+.sects:hover{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu div{
+    background-attachment: fixed;
+}
+
+.menu div:hover{
+    opacity: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.fa-x{
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.navbar a i {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
