@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Axp2a';
+    src:  url('../fonts/BlenderPro-Bold.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Axp3a';
+    src:  url('../fonts/BlenderPro-Book.woff2') format('woff2')
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+:root{
+    --green: #008F11;
+    --dark-green: #003B00;
+    --flash-green: #00FF41;
+    --red: #c22e2e;
+    --title: 'Axp2a', sans-serif;
+    --text: 'Axp3a', sans-serif;
+    --code: 'Fira Code', monospace;
+}
+
+.green{
+    color: var(--green);
+}
+
+.dark-green{
+    color: var(--dark-green);
+}
+
+.flash-green{
+    color: var(--flash-green);
+}
+
+.red{
+    color: var(--red);
+}
+
+.title{
+    font-family: var(--title);
+}
+
+.text{
+    font-family: var(--text);
+}
+
+.code{
+    font-family: var(--code);
+}
+
+.bug{
+    font-family: var(--bug)
+}

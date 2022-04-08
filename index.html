@@ -1,167 +1,57 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="icon" type="image/png" href="public/img/favicon.ico"/>
+	<head>
+		<meta charset="utf-8">
+		<title>Matrix</title>
+        <link rel="stylesheet" href="./public/css/styles.css">
+        <link rel="stylesheet" href="./public/css/short.css">
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
         <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/phone.css">
-        <link rel="stylesheet" href="./css/navbar.css">
     </head>
-    <body>
-        <div class="navbar" id="navbar">
-            <a onclick="Menu()"><i class="fa fa-bars" id="button" style="color: white;"></i></a>
-        </div>
-        <section class="menu" id="menu">
-            <a onclick="Menu()"><i class="fa fa-x" id="button"></i></a>
-            <div class="d1" onmouseenter="wr()">
-                <a class="sects title" href="#presentation" onclick="Menu()" id="pres-btn">01.Présentation</a>
-            </div>
-            <div class="d2">
-                <a class="sects code"href="#projets" onclick="Menu()">02.Expérience</a>
-            </div>
-            <div class="d3">
-                <a class="sects text"href="#repo" onclick="Menu()">03.Projets</a>
-            </div>
-        </section>
+	<body>
 
-        <header>
-            <div>
-                <h5>Salut 👋 </h5>
-                <h3>Martin Quivron, développeur web.</h3>
-                <h4>Créons quelque chose ensemble !</h4>
+        <header id="header">
+
+            <div class="container">
+                <h4 class="code flash-green">Hello</h4>
+                <h1 class="title green">Martix, web developper.</h1>
+                <h3 class="text green" id="bug">Let's build something together</h3>
             </div>
+            <div class="cworld" id="cworld"></div>
         </header>
 
-        <section id="presentation">
-            <div class="bar" id="bar-1">
-                <i class="fa-regular fa-circle-dot"></i>
-                <div class="transition"></div>
-                <i class="fa-regular fa-circle-dot"></i>
-            </div>
-            <div>
-                <h3 class="cyan code">01.Enchanté</h3>
-                <h6 style="color: white;margin-right: 10%;" class="text">
-                    Je suis Martin alias Martix, je code des sites web, apis et autres bricoles depuis 5 ans désormais.
-                    Fan du développement en tout genre, je m'épanouis encore devant ces lignes aussi belles que complexes.
-                    Je code pour moi même ou pour des particuliers et me ferait un plaisir de travailler avec vous !
-                    Lycéen, j'alterne entre l'école et mon ordinateur.
-                    Comme tout bon développeur, j'écoute Spotify 6h par jour.
-                    <b style="font-style: italic;" class="green">Bref, je suis passioné</b>
-                    
-                    <div class="pad">
-                        <h4 class="green code">Technologies</h4>
-                        <div class="spanner1">
-                            <ul>
-                                <li class="text white">JavaScript, TypeScript</li>
-                                <li class="text white">HTML, HBS, EJS...</li>
-                                <li class="text white">CSS, SCSS</li>
-                            </ul>
-                            <ul>
-                                <li class="text white">Express.js, React.js</li>
-                                <li class="text white">SQL, MongoDB...</li>
-                                <li class="text white">Node.js, npm</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </h6>
-            </div>
-            
-        </section>
-        <section id="projets">
-            <div class="bar" id="bar-2">
-                <div class="transition"></div>
-                <i class="fa-regular fa-circle-dot"></i>
-            </div>
-            <div>
-                <h3 class="cyan code">02.Expérience</h3>
-                <div class="spanner1">
-                    <div class="skills card">
-                        <div class="spanner">
-                            <i class="fa-brands fa-js green pdd"></i>
-                            <h5 class="code white pdd">JavaScript 90%</h5>
-                        </div>
-                        <div class="spanner">
-                            <i class="fa-brands fa-html5 green pdd"></i>
-                            <h5 class="code white pdd">HTML 85%</h5>
-                        </div>
-                        <div class="spanner">
-                            <i class="fa-brands fa-css3-alt green pdd"></i>
-                            <h5 class="code white pdd">CSS 70%</h5>
-                        </div>
-                        </div>
-                    <div>
-                            <div class="active" id="1">
-                                <div class="nav-exp">
-                                        <h4><b class="green title pdd">EB3</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                    </div>
-                                <p class="text white">J'ai développé un site commercant pour EB3, un serveur communautaire autour de discord. Vous pouvez y trouver des abonnements discord à bas prix ! Le fondateur du projet était très content du site, et je reste en contact avec lui encore aujourd'hui.</p>
-                            </div>
-                            
-                            <div class="hidden" id="2">
-                                <div class="nav-exp">
-                                    <h4><b class="green title pdd">Husky</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                </div>
-                                <p class="text white">J'y ai développé un bot discord communautaire multifonctions. Ma mission était de sécuriser le serveur d'attaques et d'améliorer l'exéperience des utilisateurs. Quentin Gaucher sur youtube est le fondateur, il m'a remercié de mon travail.<b style="opacity: 0;">ddzqdzqdqzdzqdzdqzdqd</b></p>
-                            </div>
-                            <div class="hidden" id="3">
-                                <div class="nav-exp">
-                                    <h4><b class="green title pdd">Aide</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                </div>
-                                <p class="text white">J'ai implanté des systèmes supplémentaires aux infrastructures du projet. Comme un système de report d'un message, des commandes statistiques... Les développeurs déjà dans le projet avant moi m'ont fait confiance et je les remercie !<b  style="opacity: 0;">dzqdzdqzdqddzqdqzdzq</b></p>
-                            </div>
-                            <div class="hidden" id="4">
-                                <div class="nav-exp">
-                                    <h4><b class="green title pdd">NRG</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                </div>
-                                <p class="text white">J'ai développé un bot discord public analyste qui permet d'avoir des statistiques précises sur un serveur, un utilisateur... De nombreux nombreux graphiques y sont intégrés. J'ai prit beaucoup de temps à développer ce bot, et je le trouve parfait.<b  style="opacity: 0;">d</b></p>
-                            </div>
-                        </div>
+        <section id="presentation" class="presentation">
+            <div class="banner">
+                <div class="pz">
+                    <ul>
+                        <li class="title green">Martin Quivron</li>
+                        <li class="title green">Martix</li>
+                        <li class="title green">16 y/o</li>
+                        <li class="title green">webdev</li>
+                    </ul>
+                </div>
+                
+                <div class="hack">
+                    <h2 class="text green">Hacking...</h2>
+                    <h5 class="text green" id="code-hack"></h5>
                 </div>
             </div>
             
         </section>
-        <section id="repo" class="reposec">
-            <div class="bar" id="bar-3">
-                <div class="transition"></div>
-                <i class="fa-regular fa-circle-dot"></i>
-
+        <div id="particles-js" class="ptcl">
+            <div class="round">
+                <h5 class="text green">I am Martin alias Martix, I have been coding websites, apis and other odds and ends for 5 years now. Fan of development of all kinds, I still thrive in front of these lines as beautiful as they are complex. I code for myself or for individuals and would be happy to work with you! As a high school student, I alternate between school and my computer. Like any good developer, I listen to Spotify 6 hours a day. In short, I am passionate</h5>
             </div>
-            <div>
-                <h3 class="cyan code">03.Projets</h3>
-                <div class="spanner">
-                    <div class="repo" id="repo1">
-                        <h2><a id="h1" class="code" target="_blank" href="https://github.com/MartixInTheMatrix/iss">ISS</a></h2>
-                        <p id="p1" class="text">schema generator of near space with the iss location</p>
-                    </div>
-                    <div class="repo" id="repo2">
-                        <h2><a id="h2" class="code"target="_blank" href="https://github.com/MartixInTheMatrix/discord.ts">discord.ts</a></h2>
-                        <p id="p2" class="text">npm module with discord addons</p>
-                    </div>
-                    </div>
-                <div class="spanner">
-                    <div class="repo" id="repo3">
-                        <h2><a id="h3" class="code"target="_blank" href="https://github.com/MartixInTheMatrix/devpedia">devpedia</a></h2>
-                        <p id="p3" class="text">wikipedia for developers !</p>
-                    </div>
-                    <div class="repo" id="repo4">
-                        <h2><a id="h4" class="code"target="_blank" href="https://github.com/MartixInTheMatrix/nrg-express-app">NRG</a></h2>
-                        <p id="p4" class="text">discord stats bot built in js</p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        
         </div>
-        <script src="./js/scrollmagic.js"></script>
-        <script src="./js/carrousel.js"></script>
-        <script src="./js/repos.js"></script>
-        <script src="./js/navbar.js"></script>
-        <script src="./js/animations.js"></script>
-    </body>
+
+        <script src="js/three.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/scrollmagic.js"></script>
+        <script src="js/genText.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/p.js"></script>
+	</body>
 </html>
