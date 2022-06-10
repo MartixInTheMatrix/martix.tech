@@ -27,7 +27,8 @@ body{
     background: rgb(0, 0, 0);
 }
 
-header{
+
+#header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,13 +36,14 @@ header{
     height:80vh;
 }
 
-header div{
+#header div{
     margin: 5%;
 }
 .container{
     margin-left: 15%;
     width: 40%;
 }
+
 h1, h2, h3, h4 {
     font-family: var(--title);
 }
@@ -49,12 +51,14 @@ h1, h2, h3, h4 {
 h5, h6, p {
     font-family: var(--title);
 }
-
 .presentation{
     border: var(--green) 2px solid; 
     margin: 10%;
 }
-
+.presentation{
+    margin-left: 2%;
+    list-style-type:decimal-leading-zero;
+}
 .presentation ul{
     margin-left: 2%;
     list-style-type:decimal-leading-zero;
@@ -83,13 +87,13 @@ h5, h6, p {
     height:20vh
 }
 @media  screen and (max-width: 850px) {
-    header{
+    #header{
         flex-direction: column-reverse;
     }
 }
 
 @media only screen and (hover: none) and (pointer: coarse){
-    header{
+    #header{
         flex-direction: column-reverse;
     }
     .banner{

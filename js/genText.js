@@ -29,7 +29,7 @@ function hack(){
             i++
         }
         
-    }, 200)
+    }, 100)
 }
 
 function bug(){
