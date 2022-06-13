@@ -1,198 +1,80 @@
-<html>
-    <head>
-        <!-- Prérequis -->
+<!DOCTYPE html>
+<head>
+    <!-- Prérequis -->
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Déscription pour moteur de recherche -->
 	<title>Martix</title>
-    <meta name="description" content="Developpeur web stack freelance">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" type="image/png" href="" />
+    <meta name="description" content="A votre service !">
     <meta name="author" content="Martix" />
     <meta name="copyright" content="© all right reserved ; tout droits réservées" />
-    <meta name="keywords" content="freelance, martix, developper, développeur, web, sites, création" />
+    <meta name="keywords" content="" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./favicon-32x32.png"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/phone.css">
-    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Embed pour réseaux -->
-        <meta property="og:locale" content="fr_FR" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Martix" />
-        <meta property="og:description" content="Developpeur web stack freelance" />
-        <meta property="og:url" content="https://" />
-        <meta property="og:image" content="" />
-
-    </head>
-    <body>
-        <div class="navbar" id="navbar">
-            <a onclick="Menu()"><i class="fa fa-bars" id="button" style="color: white;"></i></a>
+    <!-- Embed pour réseaux -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Martix" />
+    <meta property="og:description" content="A votre service !" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Martix, developpeur web !" />
+    <meta property="og:image" content="" />
+</head>
+<body>
+    <div class="bd">
+    <header>
+        <h1 class="title"><span class="slider">Martix</span> <b class="changeTxt" id="changeTxt">développeur web</b></h1>
+        <ul class="banner">
+            <li><a href="http"><i class="fa fa-github"></i></a></li>
+            <li><a href="http"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </header>
+    <div class="flex">
+        <div class="image">
+            <img class="circle" src="./img/circle.png">
+            <img class="me" src="./img/martix.png">
         </div>
-        <section class="menu" id="menu">
-            <a onclick="Menu()"><i class="fa fa-x" id="button"></i></a>
-            <div class="d1" onmouseenter="wr()">
-                <a class="sects title" href="#presentation" onclick="Menu()" id="pres-btn">01.Présentation</a>
-            </div>
-            <div class="d2">
-                <a class="sects code"href="#projets" onclick="Menu()">02.Expérience</a>
-            </div>
-            <div class="d3">
-                <a class="sects text"href="#repo" onclick="Menu()">03.Projets</a>
-            </div>
-        </section>
-
-        <header>
-            <div>
-                <h5>Salut 👋 </h5>
-                <h3>Martin Quivron, développeur web.</h3>
-                <h4>Créons quelque chose ensemble !</h4>
-            </div>
-        </header>
-
-        <section id="presentation">
-            <div class="bar" id="bar-1">
-                <i class="fa-regular fa-circle-dot"></i>
-                <div class="transition"></div>
-                <i class="fa-regular fa-circle-dot"></i>
-            </div>
-            <div>
-                <h3 class="cyan code">01.Enchanté</h3>
-                <h6 style="color: white;margin-right: 10%;" class="text">
-                    Je suis Martin alias Martix, je code des sites web, apis et autres bricoles depuis 5 ans désormais.
-                    Fan du développement en tout genre, je m'épanouis encore devant ces lignes aussi belles que complexes.
-                    Je code pour moi même ou pour des particuliers et me ferait un plaisir de travailler avec vous !
-                    Lycéen, j'alterne entre l'école et mon ordinateur.
-                    Comme tout bon développeur, j'écoute Spotify 6h par jour.
-                    <b style="font-style: italic;" class="green">Bref, je suis passioné</b>
-                    
-                    <div class="pad">
-                        <h4 class="green code">Technologies</h4>
-                        <div class="spanner1">
-                            <ul>
-                                <li class="text white">JavaScript, TypeScript</li>
-                                <li class="text white">HTML, HBS, EJS...</li>
-                                <li class="text white">CSS, SCSS</li>
-                            </ul>
-                            <ul>
-                                <li class="text white">Express.js, React.js</li>
-                                <li class="text white">SQL, MongoDB...</li>
-                                <li class="text white">Node.js, npm</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </h6>
-            </div>
-            
-        </section>
-        <section id="projets">
-            <div class="bar" id="bar-2">
-                <div class="transition"></div>
-                <i class="fa-regular fa-circle-dot"></i>
-            </div>
-            <div>
-                <h3 class="cyan code">02.Expérience</h3>
-                <div class="spanner1">
-                    <div class="skills card">
-                        <div class="spanner">
-                            <i class="fa-brands fa-js green pdd"></i>
-                            <h5 class="code white pdd">JavaScript 90%</h5>
-                        </div>
-                        <div class="spanner">
-                            <i class="fa-brands fa-html5 green pdd"></i>
-                            <h5 class="code white pdd">HTML 85%</h5>
-                        </div>
-                        <div class="spanner">
-                            <i class="fa-brands fa-css3-alt green pdd"></i>
-                            <h5 class="code white pdd">CSS 70%</h5>
-                        </div>
-                        </div>
-                    <div>
-                            <div class="active" id="1">
-                                <div class="nav-exp">
-                                        <h4><b class="green title pdd">EB3</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                    </div>
-                                <p class="text white">J'ai développé un site commercant pour EB3, un serveur communautaire autour de discord. Vous pouvez y trouver des abonnements discord à bas prix ! Le fondateur du projet était très content du site, et je reste en contact avec lui encore aujourd'hui.</p>
-                            </div>
-                            
-                            <div class="hidden" id="2">
-                                <div class="nav-exp">
-                                    <h4><b class="green title pdd">Husky</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                </div>
-                                <p class="text white">J'y ai développé un bot discord communautaire multifonctions. Ma mission était de sécuriser le serveur d'attaques et d'améliorer l'exéperience des utilisateurs. Quentin Gaucher sur youtube est le fondateur, il m'a remercié de mon travail.<b style="opacity: 0;">ddzqdzqdqzdzqdzdqzdqd</b></p>
-                            </div>
-                            <div class="hidden" id="3">
-                                <div class="nav-exp">
-                                    <h4><b class="green title pdd">Aide</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                </div>
-                                <p class="text white">J'ai implanté des systèmes supplémentaires aux infrastructures du projet. Comme un système de report d'un message, des commandes statistiques... Les développeurs déjà dans le projet avant moi m'ont fait confiance et je les remercie !<b  style="opacity: 0;">dzqdzdqzdqddzqdqzdzq</b></p>
-                            </div>
-                            <div class="hidden" id="4">
-                                <div class="nav-exp">
-                                    <h4><b class="green title pdd">NRG</b><a onclick="slide(-1)" style="padding: 5px;"><i class="white fa fa-arrow-left"></i></a><a onclick="slide(1)" style="padding: 5px;"><i class="white fa fa-arrow-right"></i></a> </h4>   
-                                </div>
-                                <p class="text white">J'ai développé un bot discord public analyste qui permet d'avoir des statistiques précises sur un serveur, un utilisateur... De nombreux nombreux graphiques y sont intégrés. J'ai prit beaucoup de temps à développer ce bot, et je le trouve parfait.<b  style="opacity: 0;">d</b></p>
-                            </div>
-                        </div>
-                </div>
-            </div>
-            
-        </section>
-        <section id="repo" class="reposec">
-            <div class="bar" id="bar-3">
-                <div class="transition"></div>
-                <i class="fa-regular fa-circle-dot"></i>
-
-            </div>
-            <div>
-                <h3 class="cyan code">03.Projets</h3>
-                <div class="spanner">
-                    <div class="repo" id="repo1">
-                        <h2><a id="h1" class="code" target="_blank"></a></h2>
-                        <p id="p1" class="text"></p>
-                    </div>
-                    <div class="repo" id="repo2">
-                        <h2><a id="h2" class="code"target="_blank"></a></h2>
-                        <p id="p2" class="text"></p>
-                    </div>
-                    </div>
-                <div class="spanner">
-                    <div class="repo" id="repo3">
-                        <h2><a id="h3" class="code"target="_blank"></a></h2>
-                        <p id="p3" class="text"></p>
-                    </div>
-                    <div class="repo" id="repo4">
-                        <h2><a id="h4" class="code"target="_blank"></a></h2>
-                        <p id="p4" class="text"></p>
-                    </div>
-                </div>
-                    <div class="spanner">
-                    <div class="repo" id="repo5">
-                        <h2><a id="h5" class="code"target="_blank"></a></h2>
-                        <p id="p5" class="text"></p>
-                    </div>
-                    <div class="repo" id="repo6">
-                        <h2><a id="h6" class="code"target="_blank"></a></h2>
-                        <p id="p6" class="text"></p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        
+        <div class="presentation">
+            <p class="pres"><b>Salut ! 👋</b><br><br> Je code depuis désormais 4 ans, passioné.<br> <b>Je suis Martin, 16 ans sur Paris, développeur web 💻.</b><br><br> J’ai codé pleins de petites choses comme des sites, des bots discords, des apis et autres projets passionnants 🤖 !<br><br> <b>Je code en JavaScript, TypeScript, HTML, CSS et la plupart de leurs dérivés.</b><br><br> J'essaye de coder sans outils inutiles comme bootstrap ou jquery qui rajoutent beaucoup trop de code inutilement, je développe le site à se juste valeur.</p>
         </div>
-        <script src="./js/scrollmagic.js"></script>
-        <script src="./js/carrousel.js"></script>
-        <script src="./js/repos.js"></script>
-        <script src="./js/navbar.js"></script>
-        <script src="./js/animations.js"></script>
-    </body>
-</html>
+    </div>
+    <div style="display:flex; align-items:center; justify-content:center">
+   <div class="skills">
+    <div class="stats space">
+        <canvas id="stats" height="200vh" width="200vw"></canvas>
+    </div>
+<div class="space">
+    <div class="skills-banner">
+        <ul>
+            <li><img src="./img/js.png"></li>
+            <li><img src="./img/html.png"></li>
+            <li><img src="./img/hbs.webp"></li>
+        </ul>
+    </div>
+    <div class="skills-banner">
+        <ul>
+            <li><img src="./img/ts.webp"></li>
+            <li><img src="./img/css.png"></li>
+            <li><img src="./img/mysql.png"></li>
+        </ul>
+    </div>
+    <div class="skills-banner">
+        <ul>
+            <li><img src="./img/node.png"></li>
+            <li><img src="./img/electron.png"></li>
+            <li><img src="./img/mongodb.png"></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/chart.js"></script>
+</body>
